@@ -2,13 +2,60 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import 'variables';
+// @import 'mixins';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+  	-webkit-overflow-scrolling: touch;
+}
+
+body
+{
+	line-height: 1;
+	font-size: 100%;
+  	-webkit-overflow-scrolling: touch;
+}
+
+// reset links
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+// reset h
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+// reset list
+ul, ol
+{
+	list-style: none;
+}
+
+// submit and buttons
+input[type="submit"], button{
+	box-shadow: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+textarea{
+    resize:none;
+    font-family:inherit;
+    outline: 0 !important;
 }
